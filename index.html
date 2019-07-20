@@ -48,7 +48,7 @@
         $('#results').text('Without the Freedom Dividend: ' + displayResults(results));
         $('#resultsUbi').text('With the Freedom Dividend: ' + displayResults(resultsUbi));
         if (!results.nope && !resultsUbi.nope) {
-          $('#comparer').text(`The Freedom Dividend would save you ${displayCurrency(results.totalPaid - resultsUbi.totalPaid)} on the way to getting debt-free assuming you used your full dividend to pay your debt each month.`)
+          $('#comparer').html(`<a href="https://www.yang2020.com/policies/the-freedom-dividend/">The Freedom Dividend</a> would save you ${displayCurrency(results.totalPaid - resultsUbi.totalPaid)} on the way to getting debt-free assuming you used your full dividend to pay your debt each month.`)
         }
         e.preventDefault();
       })
