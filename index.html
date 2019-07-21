@@ -27,7 +27,6 @@
         balance += (balance * apr / 12) - monthlyPayment;
         totalPaid += monthlyPayment;
         months++;
-        console.log({ balance, totalPaid });
       }
       return { totalPaid: totalPaid + balance, months };
     }
